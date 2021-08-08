@@ -1,0 +1,63 @@
+header {
+	width: 100%;
+	margin: 0 auto;
+	padding: 48px 0;
+
+	display: flex;
+	align-items: center;
+}
+
+header div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header div > img {
+	width: 266px;
+	height: 73px;
+	object-fit: cover;
+}
+
+.login-button {
+	display: flex;
+	align-items: center;
+
+	padding-right: 16px;
+	background: none;
+	border: 0;
+	border-right: 1px solid var(--white);
+}
+
+.login-button i {
+	margin-right: 8px;
+	color: var(--yellow-500);
+	font-size: 32px;
+}
+
+.login-button span {
+	color: var(--white);
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.register-button {
+	display: flex;
+	align-items: center;
+
+	margin-left: 16px;
+	background: none;
+	border: 0;
+}
+
+.register-button i {
+	margin-left: 8px;
+	color: var(--yellow-500);
+	font-size: 24px;
+}
+
+.register-button span {
+	color: var(--white);
+	font-size: 16px;
+	font-weight: 300;
+}
