@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 :root {
-	--white: #FEFEFF;
-	
+	--white: #fefeff;
+
 	--yellow-500: #fede01;
 
-	--blue-500: #016FA6;
+	--blue-300: #d4e7ef;
+	--blue-500: #016fa6;
 	--blue-700: #015389;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -22,14 +23,23 @@ body {
 	scroll-behavior: smooth;
 }
 
-body, input, button, span, strong, textarea, select {
+body,
+input,
+button,
+span,
+strong,
+textarea,
+select {
 	font-family: "Poppins", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	color: var(--white);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
 	font-family: "Poppins", sans-serif;
 	color: var(--blue-700);
 }

@@ -1,0 +1,100 @@
+form#search-available-vehicles-form {
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.date-time-input-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.date-time-input-container + .date-time-input-container {
+	margin-left: 16px;
+}
+
+.date-time-input-container > label {
+	color: var(--white);
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 8px;
+}
+
+.date-time-input-container > div {
+	display: flex;
+}
+
+.date-input {
+	display: flex;
+	align-items: center;
+
+	background: var(--white);
+	border-radius: 4px 0 0 4px;
+	padding: 8px 0 8px 24px;
+}
+
+.date-input > input[type="date"] {
+	background: transparent;
+	border: none;
+	color: var(--blue-700);
+
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	margin-right: 24px;
+}
+
+.date-input > input[type="date"]::-webkit-calendar-picker-indicator {
+	cursor: pointer;
+	background: url("../../../assets/calendar-icon.svg") no-repeat;
+	width: 26px;
+	height: 26px;
+	margin-right: 8px;
+	margin-left: 0;
+}
+
+.time-input {
+	display: flex;
+	align-items: center;
+
+	background: var(--blue-300);
+	border-radius: 0 4px 4px 0;
+	padding: 8px 24px 8px 8px;
+}
+
+.time-input > input[type="time"] {
+	background: transparent;
+	border: none;
+	color: var(--blue-700);
+
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.time-input > input[type="time"]::-webkit-calendar-picker-indicator {
+	cursor: pointer;
+	background: url("../../../assets/clock-icon.svg") no-repeat;
+	width: 26px;
+	margin-right: 8px;
+	margin-left: 0;
+}
+
+.search-available-vehicles-submit-form {
+	background: var(--yellow-500);
+	color: var(--blue-700);
+	padding: 11px 52px;
+	font-weight: bold;
+	margin-left: 16px;
+	border: none;
+	border-radius: 4px;
+	align-self: flex-end;
+	transition: filter 0.2s;
+}
+
+.search-available-vehicles-submit-form:hover {
+	filter: brightness(0.9);
+}
