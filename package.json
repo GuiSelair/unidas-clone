@@ -1,20 +1,23 @@
 {
-  "name": "unidas-clone",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GuiSelair/unidas-clone.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/GuiSelair/unidas-clone/issues"
-  },
-  "homepage": "https://github.com/GuiSelair/unidas-clone#readme"
+	"name": "unidas-clone",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"server": "json-server --watch ./backend/databaseMock.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GuiSelair/unidas-clone.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/GuiSelair/unidas-clone/issues"
+	},
+	"homepage": "https://github.com/GuiSelair/unidas-clone#readme",
+	"devDependencies": {
+		"json-server": "^0.16.3"
+	}
 }

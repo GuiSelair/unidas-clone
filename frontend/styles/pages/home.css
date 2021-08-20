@@ -1,10 +1,11 @@
-.datePickerWrapper {
+/* DateTimePicker */
+.searchAvailableVehiclesWrapper {
 	width: 100%;
 	padding: 24px 16px;
 	background: var(--blue-700);
 }
 
-.datePickerWrapper > div {
+.searchAvailableVehiclesWrapper > div {
 	max-width: 1120px;
 	margin: 0 auto;
 
@@ -12,9 +13,139 @@
 	flex-direction: column;
 }
 
-.datePickerWrapper > div > h3 {
+.searchAvailableVehiclesWrapper > div > h3 {
 	color: var(--white);
 	font-weight: 600;
 	font-size: 32px;
 	margin-bottom: 16px;
+}
+
+/* MAIN CONTENT */
+.listAvailableVehicles {
+	padding-top: 48px;
+	max-width: 1120px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.listAvailableVehicles > h3 {
+	font-size: 32px;
+	line-height: 48px;
+	color: var(--blue-700);
+	font-weight: 400;
+	margin-bottom: 72px;
+
+	justify-self: flex-start;
+}
+
+ul#vehicles-grid-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 32px;
+
+	list-style: none;
+}
+
+.vehicleAvailableCard {
+	padding: 32px;
+	width: 100%;
+	border: 1px solid #d4e7ef;
+	border-radius: 4px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.vehicleAvailableCard > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.vehicleAvailableCard > footer {
+	width: 100%;
+	margin-top: 44px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.vehicleDetails {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.vehicleDetails > h4 {
+	font-size: 26px;
+	line-height: 39px;
+	color: var(--blue-700);
+	font-weight: 400;
+	margin-bottom: 12px;
+	text-align: left;
+}
+
+.vehicleDetails > p {
+	text-align: left;
+	font-size: 16px;
+	line-height: 24px;
+	min-height: 48px;
+	color: var(--black);
+	margin-bottom: 0;
+}
+
+.vehicleDetails > hr {
+	width: 100%;
+	border: 1px solid #84b6cc;
+	margin-bottom: 16px;
+}
+
+button.horizontalLabel {
+	display: flex;
+	align-items: center;
+	border: 0;
+	background: none;
+}
+
+.horizontalLabel > img {
+	margin-right: 8px;
+}
+
+.horizontalLabel > span {
+	font-size: 16px;
+	font-weight: 300;
+	color: var(--blue-500);
+}
+
+.formPrice {
+	display: flex;
+	align-items: center;
+}
+
+.formPrice .moeda {
+	align-self: flex-start;
+	color: var(--blue-700);
+	font-size: 16px;
+	font-weight: 300;
+	margin-right: 4px;
+	margin-top: 8px;
+}
+
+.formPrice > strong {
+	color: var(--blue-700);
+	font-weight: 600;
+	font-size: 40px;
+}
+
+.formPrice .pricePerPeriod {
+	display: inline-block;
+	margin-left: 8px;
+	color: var(--blue-700);
+	font-size: 18px;
+	font-weight: 300;
 }

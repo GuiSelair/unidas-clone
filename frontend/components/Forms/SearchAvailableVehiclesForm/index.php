@@ -10,7 +10,7 @@
 					placeholder="Escolha uma data"
 					pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
 					max="2022-03-01"
-					required
+					
 				/>
 			</div>
 			<div class="time-input">
@@ -20,7 +20,7 @@
 					id="rentalStartTime"
 					min="09:00"
 					max="18:00"
-					required
+					
 				/>
 			</div>
 		</div>
@@ -36,7 +36,7 @@
 					placeholder="Escolha uma data"
 					pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
 					max="2022-03-01"
-					required
+					
 				/>
 			</div>
 			<div class="time-input">
@@ -46,17 +46,17 @@
 					id="rentalEndTime"
 					min="09:00"
 					max="18:00"
-					required
+					
 				/>
 			</div>
 		</div>
 	</div>
 	<button 
 		type="submit" 
-		class="search-available-vehicles-submit-form"
+		class="buttonSubmit search"
 	>
 		PESQUISAR
 	</button>
 </form>
 
-<script src="./frontend/components/Forms/SearchAvailableVehiclesForm/controllers/searchAvailableVehiclesController.js"></script>
+<script type="module" src="./frontend/controllers/searchAvailableVehiclesController.js"></script>
