@@ -23,11 +23,11 @@
 		</div>
 	</section>
 
-	<section class="listAvailableVehicles">
+	<section class="bookingSummary">
 		<h3>Resumo da reserva</h3>
 
-		<article>
-			<h4>Datas</h4>
+		<h4>Datas</h4>
+		<article class="bookingDates">
 			<div>
 				<img src="../assets/data-inicio-icon.svg"/>
 				<span>Retirada</span>
@@ -37,6 +37,18 @@
 				<img src="../assets/data-fim-icon.svg"/>
 				<span>Devolução</span>
 				<strong>30/06/2021 às 20:00</strong>
+			</div>
+		</article>
+
+		<h4>Selecione seu veículo</h4>
+		<article class="selectVehicle">
+			<!-- FOREACH PHP (LISTAR TODOS OS VEICULOS DA CATEGORIA QUE ESTÃO DISPONIVEIS) -->
+			<div class="bookingVehicleAvailable">
+				<input type="checkbox" name="kwid" id="2">
+				<div class="check"></div>
+
+				<img src="../assets/kwid.png" alt="Renault Kwid" />
+				<strong>Renault Kwid</strong>
 			</div>
 		</article>
 	</section>
