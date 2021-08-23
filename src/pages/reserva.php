@@ -23,7 +23,7 @@
 		</div>
 	</section>
 
-	<section class="bookingSummary">
+	<form class="bookingSummary">
 		<h3>Resumo da reserva</h3>
 
 		<h4>Datas</h4>
@@ -44,14 +44,46 @@
 		<article class="selectVehicle">
 			<!-- FOREACH PHP (LISTAR TODOS OS VEICULOS DA CATEGORIA QUE ESTÃO DISPONIVEIS) -->
 			<div class="bookingVehicleAvailable">
-				<input type="checkbox" name="kwid" id="2">
+				<input class="triggerSelect" type="checkbox" name="kwid" id="2">
 				<div class="check"></div>
 
 				<img src="../assets/kwid.png" alt="Renault Kwid" />
 				<strong>Renault Kwid</strong>
 			</div>
 		</article>
-	</section>
+
+		<h4>Subtotal</h4>
+		<table class="booking-subtotal">
+			<tbody>
+				<tr>
+					<td>
+						Quantidade de diárias:
+					</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>
+						Valor da diária:
+					</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>
+						Seguro:
+					</td>
+					<td>R$20,00</td>
+				</tr>
+				<tr>
+					<td class="bookingSubtotalPrice">
+						TOTAL:
+					</td>
+					<td class="bookingSubtotalPrice">R$132,00</td>
+				</tr>
+			</tbody>	
+		</table>
+		
+		<button class="buttonSubmit">RESERVAR</button>
+	</form>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
