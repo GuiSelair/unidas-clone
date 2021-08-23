@@ -1,0 +1,59 @@
+/* LINK TO REGISTER */
+.linkToRegisterWrapper {
+	width: 100%;
+	padding: 24px 16px;
+	background: var(--blue-700);
+}
+
+.linkToRegisterWrapper > div {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 24px 0;
+
+	display: flex;
+	align-items: center;
+}
+
+.linkToRegisterWrapper > div > h3 {
+	color: var(--white);
+	font-weight: 500;
+	font-size: 32px;
+	margin-bottom: 0;
+}
+
+.linkToRegister {
+	margin-left: 32px;
+}
+
+/* LOGIN CONTENT */
+.loginContent {
+	display: flex;
+	align-items: flex-start;
+	max-width: 1120px;
+	margin: 0 auto;
+	margin-top: 48px;
+	padding-bottom: 300px;
+}
+
+.loginContent > h3 {
+	margin-right: 172px;
+	font-size: 36px;
+	text-align: left;
+}
+
+.loginContent > form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: 500px;
+}
+
+.loginContent > form > button {
+	align-self: flex-start;
+	margin-top: 16px;
+}
+
+.loginContent > form > div {
+	display: none;
+}
