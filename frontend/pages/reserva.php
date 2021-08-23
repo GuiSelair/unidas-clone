@@ -16,7 +16,7 @@
 	<?php include "../components/Header/index.php" ?>
 	<section class="searchAvailableVehiclesWrapper">
 		<div>
-			<h3>Unidos - Aluguel de carros</h3>
+			<h3>Alugue um carro</h3>
 			<div>
 				<?php include "../components/Forms/SearchAvailableVehiclesForm/index.php" ?>
 			</div>
@@ -24,13 +24,22 @@
 	</section>
 
 	<section class="listAvailableVehicles">
-		<h3>Escolha um grupo de veículos</h3>
+		<h3>Resumo da reserva</h3>
 
-		<ul id="vehicles-grid-list"></ul>
-		</div>
+		<article>
+			<h4>Datas</h4>
+			<div>
+				<img src="../assets/data-inicio-icon.svg"/>
+				<span>Retirada</span>
+				<strong>29/06/2021 às 20:00</strong>
+			</div>
+			<div>
+				<img src="../assets/data-fim-icon.svg"/>
+				<span>Devolução</span>
+				<strong>30/06/2021 às 20:00</strong>
+			</div>
+		</article>
 	</section>
-
-
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

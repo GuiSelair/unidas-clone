@@ -35,6 +35,10 @@ const insertElementsInVehiclesList = (vehiclesAvailables) => {
 					: `${someVehiclesNameAvailables} | ${vehicleName}`;
 		});
 
+		const caracteristicas = vehicle.caracteristicas
+			.map((caracteristica) => "<li>" + caracteristica + "</li>")
+			.join(" ");
+
 		listVehiclesElement.innerHTML += `
 			<li class="vehicleAvailableCard">
 				<div>
@@ -43,7 +47,7 @@ const insertElementsInVehiclesList = (vehiclesAvailables) => {
 						<p>${someVehiclesNameAvailables} | ou similares</p>
 						<hr/>
 						<button class="horizontalLabel" data-bs-toggle="modal" data-bs-target="#productMoreDetails-${vehicle.id}">
-							<img src="./frontend/assets/circle-plus-icon.svg" alt="Veja mais detalhes"/>
+							<img src="../assets/circle-plus-icon.svg" alt="Veja mais detalhes"/>
 							<span>mais detalhes</span>
 						</button>
 					</div>
@@ -62,19 +66,18 @@ const insertElementsInVehiclesList = (vehiclesAvailables) => {
 				</footer>
 			</li>
 			<div class="modal fade" id="productMoreDetails-${vehicle.id}" tabindex="-1" aria-labelledby="productMoreDetails-${vehicle.id}" aria-hidden="true">
-				<div class="modal-dialog">
+				<div class="modal-dialog modal-dialog-centered">
 					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title">Características do grupo</h5>
+						<div class="modal-body moreDetailsContent">
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						</div>
-						<div class="modal-body">
+							<h5 class="modal-title">Características do grupo</h5>
+							<hr/>
 							<h3>${vehicle.nome}</h3>
 							<p>${someVehiclesNameAvailables} | ou similares</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
+							<ul class="characteristics">
+								${caracteristicas}
+							</ul>
+							<button type="button" class="buttonSubmit closeProductMoreDetails" data-bs-dismiss="modal">OK</button>
 						</div>
 					</div>
 				</div>

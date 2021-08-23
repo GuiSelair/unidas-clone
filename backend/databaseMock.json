@@ -5,7 +5,7 @@
 			"nome": "Econômicos 1.0",
 			"veiculos": ["Renault KWID", "Fiat Mobi"],
 			"valor": 112,
-			"thumbnail": "./frontend/assets/kwid.png",
+			"thumbnail": "../assets/kwid.png",
 			"caracteristicas": ["5 portas", "Motor 1.0", "Câmbio Manual", "5 lugares"]
 		},
 		{
@@ -13,7 +13,7 @@
 			"nome": "Econômicos 1.0",
 			"veiculos": ["Renault KWID", "Fiat Mobi"],
 			"valor": 112,
-			"thumbnail": "./frontend/assets/kwid.png",
+			"thumbnail": "../assets/kwid.png",
 			"caracteristicas": ["5 portas", "Motor 1.0", "Câmbio Manual", "5 lugares"]
 		},
 		{
@@ -21,7 +21,7 @@
 			"nome": "Econômicos 1.0",
 			"veiculos": ["Renault KWID", "Fiat Mobi"],
 			"valor": 112,
-			"thumbnail": "./frontend/assets/kwid.png",
+			"thumbnail": "../assets/kwid.png",
 			"caracteristicas": ["5 portas", "Motor 1.0", "Câmbio Manual", "5 lugares"]
 		},
 		{
@@ -29,7 +29,7 @@
 			"nome": "Econômicos 1.0",
 			"veiculos": ["Renault KWID", "Fiat Mobi"],
 			"valor": 112,
-			"thumbnail": "./frontend/assets/kwid.png",
+			"thumbnail": "../assets/kwid.png",
 			"caracteristicas": ["5 portas", "Motor 1.0", "Câmbio Manual", "5 lugares"]
 		}
 	]

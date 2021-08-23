@@ -59,4 +59,4 @@
 	</button>
 </form>
 
-<script type="module" src="./frontend/controllers/searchAvailableVehiclesController.js"></script>
+<script type="module" src="../controllers/searchAvailableVehiclesController.js"></script>
