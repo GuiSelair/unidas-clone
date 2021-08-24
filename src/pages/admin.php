@@ -15,11 +15,6 @@
 	<section class="adminButtonsWrapper">
 		<div>
 			<h3>Painel admnistrativo </h3>
-			<p>Cadastros</p>
-			<div class="horizontalLabel adminButtons">
-				<button type="button" class="buttonSubmit">Cadastrar modelo</button>
-				<button type="button" class="buttonSubmit">Cadastrar veículos</button>
-			</div>
 		</div>
 	</section>
 
@@ -47,40 +42,7 @@
 					<td>30/06/2021 às 20:00</td>
 					<td class="price">R$132,00</td>
 					<td>
-						<button type="button" class="buttonSubmit">ENCERRAR</button>
-					</td>
-				</tr>
-				<tr>
-					<td>Guilherme Selair</td>
-					<td>Fiat Mobi</td>
-					<td>ACD-495</td>
-					<td>29/06/2021 às 20:00</td>
-					<td>30/06/2021 às 20:00</td>
-					<td class="price">R$132,00</td>
-					<td>
-						<button type="button" class="buttonSubmit">ENCERRAR</button>
-					</td>
-				</tr>
-				<tr>
-					<td>Guilherme Selair</td>
-					<td>Fiat Mobi</td>
-					<td>ACD-495</td>
-					<td>29/06/2021 às 20:00</td>
-					<td>30/06/2021 às 20:00</td>
-					<td class="price">R$132,00</td>
-					<td>
-						<button type="button" class="buttonSubmit">ENCERRAR</button>
-					</td>
-				</tr>
-				<tr>
-					<td>Guilherme Selair</td>
-					<td>Fiat Mobi</td>
-					<td>ACD-495</td>
-					<td>29/06/2021 às 20:00</td>
-					<td>30/06/2021 às 20:00</td>
-					<td class="price">R$132,00</td>
-					<td>
-						<button type="button" class="buttonSubmit">ENCERRAR</button>
+						<button type="button" class="buttonSubmit bookingClose">ENCERRAR</button>
 					</td>
 				</tr>
 				<tr>
@@ -94,6 +56,7 @@
 						<button type="button" class="buttonSubmit bookingClose">ENCERRAR</button>
 					</td>
 				</tr>
+				
 			</tbody>
 		</table>
 	</section>

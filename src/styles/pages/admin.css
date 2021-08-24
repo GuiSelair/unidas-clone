@@ -34,6 +34,7 @@
 	max-width: 1120px;
 	margin: 0 auto;
 	margin-top: 48px;
+	padding-bottom: 200px;
 }
 
 .adminList > h3 {
@@ -62,12 +63,19 @@
 }
 
 .adminList > table td {
-	padding: 1rem 2rem;
+	padding: 12px;
 	border: 0;
 	background: #f2f8fa;
 	font-weight: 400;
+	font-size: 14px;
 	color: var(--blue-500);
+	text-align: center;
 }
 
 .bookingClose {
+	padding: 11px 24px;
+}
+
+.price {
+	font-weight: 700 !important;
 }
