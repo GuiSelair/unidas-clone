@@ -45,8 +45,7 @@
 	display: flex;
 	align-items: center;
 	margin-top: 8px;
-	margin-bottom: 16px;
-
+	margin-bottom: 32px;
 }
 
 .bookingDates > div {
@@ -58,12 +57,16 @@
 	border-radius: 4px;
 }
 
-.bookingDates > div > img {
+.bookingDates > div + div {
+	margin-left: 32px;
+}
+
+.horizontalLabel > img {
 	margin-right: 24px;
 }
 
-.bookingDates > div > span {
-	color: var(--blu-700);
+.horizontalLabel > span {
+	color: var(--blue-700);
 	font-size: 24px;
 }
 
@@ -73,6 +76,7 @@
 	font-weight: bold;
 	font-size: 32px;
 	margin-top: 16px;
+	color: var(--blue-700);
 }
 
 /* SELEÇÃO DE VEICULO */
@@ -89,10 +93,30 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	border: 1px solid var(--blue-500);
+	border-radius: 4px;
+	margin-bottom: 32px;
+	cursor: pointer;
 }
 
-.bookingVehicleAvailable input {
+.bookingVehicleCard + .bookingVehicleCard {
+	margin-left: 32px;
+}
+
+.triggerSelect {
 	display: none;
+}
+
+.triggerSelect:checked + .bookingVehicleAvailable {
+	background: var(--blue-700);
+}
+
+.triggerSelect:checked + .bookingVehicleAvailable > strong {
+	color: var(--white);
+}
+
+.triggerSelect:checked + .bookingVehicleAvailable .check {
+	background: var(--blue-500);
 }
 
 .bookingVehicleAvailable .check {
@@ -107,5 +131,46 @@
 
 .triggerSelect:checked + .check {
 	display: block;
-	
+}
+
+.bookingVehicleAvailable > strong {
+	color: var(--blue-700);
+	margin-top: 16px;
+	font-size: 24px;
+}
+
+/* SUBTOTAL */
+.bookingSubtotal {
+	background: var(--blue-700);
+	color: var(--white);
+	width: 100%;
+	border-radius: 4px;
+	padding: 8px 40px;
+	display: flex;
+	flex-direction: column;
+	border-spacing: 0 0.5rem;
+}
+
+.bookingSubtotal tbody tr {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 0;
+}
+
+tr + tr {
+	border-top: 1px solid var(--white);
+}
+
+.bookingSubtotalPrice {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+/* BUTTON SUBMITTED */
+.bookingSubmit {
+	margin-top: 16px;
+	width: 100%;
+	font-weight: bold;
+	font-size: 20px;
 }

@@ -113,3 +113,9 @@ label + .input {
 	color: #ff5050;
 	font-size: 16px;
 }
+
+/* HORIZONTAL */
+.horizontalLabel {
+	display: flex;
+	align-items: center;
+}
